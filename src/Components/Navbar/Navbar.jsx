@@ -52,9 +52,9 @@ const Navbar = () => {
         <Drawer open={open} onClose={toggleDrawer(false)}>
           <motion.div
             className="drawer"
-            initial={{ opacity: 0, scale: 0.8, x: -50 }}
-            whileInView={{ opacity: 1, scale: 1, x: 0 }}
-            transition={{ duration: 1.2 }}
+            initial={{ opacity: 0, scale: 0.7, x: -50 }}
+            whileInView={{ opacity: 1, scale: 0.9, x: 0 }}
+            transition={{ duration: 0.3 }}
           >
             <svg
               width="800px"
