@@ -1,0 +1,19 @@
+.video {
+  z-index: -1;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.about {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    40deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  text-align: justify;
+  padding: 40px;
+}
