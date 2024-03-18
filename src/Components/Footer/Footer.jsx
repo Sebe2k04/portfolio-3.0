@@ -9,14 +9,14 @@ const Footer = () => {
           <h1>Sebe S</h1>
           <h3>Web Developer</h3>
         </div>
-        <div className="m-auto">
+        <div className="footlinks m-auto">
           <p>Home</p>
           <p>Skills</p>
           <p>About</p>
           <p>Contact</p>
         </div>
       </div>
-      <div className="flex justify-center gap-4 pt-10">
+      <div className="footlinks flex justify-center gap-4 pt-10">
         <a href="mailto:sebe2k04@gmail.com">
           <svg
             fill="#000000"
