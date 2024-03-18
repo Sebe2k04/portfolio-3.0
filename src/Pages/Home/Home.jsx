@@ -45,7 +45,7 @@ const Home = () => {
             <img src={pic} alt="" className="rounded-xl shadow-xl h-[400px] " />
           </div>
           <div className="pt-20">
-          <motion.p
+          {/* <motion.p
               className=""
               initial={{ opacity: 0, scale: 0.8, x: -50 }}
               whileInView={{ opacity: 1, scale: 1, x: 0 }}
@@ -61,7 +61,17 @@ const Home = () => {
               digital experiences. Explore my work, and let's connect to discuss
               how we can collaborate and bring your ideas to life. Thank you for
               visiting!
-            </motion.p>
+            </motion.p> */}
+            <AnimatedText text="Welcome to my digital space! I am Sebe S, a passionate web
+              developer with a love for turning ideas into interactive and
+              visually appealing experiences. This portfolio is a reflection of
+              my journey, featuring a collection of projects that highlight my
+              skills in web development, design, etc.. From crafting elegant and
+              responsive websites to solving complex problems through innovative
+              solutions, I'm dedicated to creating meaningful and impactful
+              digital experiences. Explore my work, and let's connect to discuss
+              how we can collaborate and bring your ideas to life. Thank you for
+              visiting!"/>
           </div>
         </div>
       </div>
