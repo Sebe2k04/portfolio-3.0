@@ -1,4 +1,5 @@
 import "./Home.scss";
+
 import { motion } from "framer-motion";
 import backgroundvideo from "../../assets/Videos/bg2.mp4";
 import pic from "../../assets/Images/picc.png";
@@ -8,6 +9,7 @@ import FrontEnd from "../../Components/Skills/FrontEnd/FrontEnd";
 import { useState } from "react";
 import BackEnd from "../../Components/Skills/BackEnd/BackEnd";
 import Others from "../../Components/Skills/Others/Others";
+import FIxedButton from "../../Components/FixedButton/FIxedButton";
 const Home = () => {
 
   const [skill,setSkill] = useState (1)
@@ -210,6 +212,7 @@ const Home = () => {
           <Marquee text={["FrontEnd", "BackEnd", "FrameWorks", "Libraries"]} />
         </div>
       </div>
+      <FIxedButton />
     </div>
   );
 };

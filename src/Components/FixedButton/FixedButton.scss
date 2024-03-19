@@ -1,0 +1,26 @@
+.fixedlogo {
+    z-index: 1000;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    .fimg1 {
+      z-index: 1000;
+      position: fixed;
+      width: 80px;
+      right: 40px;
+      bottom: 40px;
+      scale: 60%;
+    }
+    .fimg2 {
+      z-index: 800;
+      background-color: white;
+      border-radius: 100%;
+      animation-duration: 4s;
+      padding: 4px;
+      position: fixed;
+      width: 80px;
+      right: 40px;
+      bottom: 40px;
+    }
+  }
+  
