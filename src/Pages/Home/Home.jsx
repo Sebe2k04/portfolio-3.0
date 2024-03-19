@@ -197,9 +197,9 @@ const Home = () => {
           </div>
           <p className="pt-7 text-white">Click to show my skills</p>
           <div className="pt-2 flex gap-5">
-            <p className="cursor-pointer hover:text-white" onClick={()=>setSkill(1)}>FrontEnd</p>
-            <p className="cursor-pointer hover:text-white" onClick={()=>setSkill(2)}>BackEnd</p>
-            <p className="cursor-pointer hover:text-white" onClick={()=>setSkill(3)}>Tools etc..</p>
+            <p className="cursor-pointer hover:text-white hover:bg-black  pl-4 pr-4 pt-2 pb-2 border-2 rounded-3xl" onClick={()=>setSkill(1)}>FrontEnd</p>
+            <p className="cursor-pointer hover:text-white hover:bg-black  pl-4 pr-4 pt-2 pb-2 border-2 rounded-3xl" onClick={()=>setSkill(2)}>BackEnd</p>
+            <p className="cursor-pointer hover:text-white hover:bg-black  pl-4 pr-4 pt-2 pb-2 border-2 rounded-3xl" onClick={()=>setSkill(3)}>Tools etc..</p>
           </div>
               
           {handleSkill()}
