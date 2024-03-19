@@ -6,7 +6,6 @@
     .fimg1 {
       z-index: 1000;
       position: fixed;
-      width: 80px;
       right: 40px;
       bottom: 40px;
       scale: 60%;
@@ -18,9 +17,20 @@
       animation-duration: 4s;
       padding: 4px;
       position: fixed;
-      width: 80px;
       right: 40px;
       bottom: 40px;
     }
   }
   
+
+// @media screen and (max-width: 480px) {
+//     .fixedlogo{
+//         .fimg2{
+//             width: 100px;
+//         }
+//         .fimg1{
+//             width: 100px;
+//         }
+//     }
+    
+// }
