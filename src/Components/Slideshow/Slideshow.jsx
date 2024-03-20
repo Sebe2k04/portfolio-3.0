@@ -17,7 +17,7 @@ const Slideshow = () => {
 
   const Card = (img,name) => {
     return (
-      <div className="card h-[400px] rounded-2xl min-w-[300px] m-5 bg-zinc-400">
+      <div className="card h-[400px] rounded-2xl min-w-[300px] m-5 ">
         <div className="h-[180px] w-[260px] mt-[20px] m-auto rounded-2xl bg-white">
           <img src={img} alt="" className="rounded-2xl w-full h-full grayscale " />
         </div>

@@ -254,8 +254,11 @@ const Home = () => {
         <div className="">
           <p className="text-center text-zinc-400 pt-5">Drag Horizontally to View !!!</p>
         </div>
-        <div className="pt-10">
+        <div className="pt-10 ">
           <Slideshow />
+        </div>
+        <div className="text-black pt-10 pb-5">
+          <Marquee text={["Portfolio", "Ecommerce", "AI","ChatBot", "IOT"]} />
         </div>
       </div>
       <div className="contact">
