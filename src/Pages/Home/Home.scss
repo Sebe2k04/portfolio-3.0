@@ -11,6 +11,7 @@
   border-radius: 25px;
   scale: 0.8;
   background: transparent;
+  transition: .5s;
 
   &:hover {
     box-shadow: 2px 2px 10px white;
@@ -36,5 +37,15 @@
   background-color: gray;
   //   background: rgb(112,112,112);
   // background: linear-gradient(158deg, rgba(112,112,112,1) 0%, rgba(255,255,255,1) 46%, rgba(255,255,255,1) 46%, rgba(113,113,113,1) 100%);
+}
+
+.projects{
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    200deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 60%,
+    rgb(103, 103, 103) 100%
+  );
 }
 

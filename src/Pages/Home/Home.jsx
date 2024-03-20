@@ -7,24 +7,23 @@ import AnimatedText from "../../Components/Animations/AnimatedText/AnimatedText"
 import Marquee from "../../Components/Animations/Marquee/Marquee";
 import FrontEnd from "../../Components/Skills/FrontEnd/FrontEnd";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import BackEnd from "../../Components/Skills/BackEnd/BackEnd";
 import Others from "../../Components/Skills/Others/Others";
 import FIxedButton from "../../Components/FixedButton/FIxedButton";
+import Slideshow from "../../Components/Slideshow/Slideshow";
 const Home = () => {
-
-  const [skill,setSkill] = useState (1)
+  const [skill, setSkill] = useState(1);
 
   const handleSkill = () => {
-    if(skill===1){
-      return <FrontEnd />
+    if (skill === 1) {
+      return <FrontEnd />;
+    } else if (skill === 2) {
+      return <BackEnd />;
+    } else {
+      return <Others />;
     }
-    else if(skill===2){
-      return <BackEnd />
-    }
-    else{
-      return <Others />
-    }
-  }
+  };
 
   return (
     <div className="">
@@ -136,11 +135,11 @@ const Home = () => {
               className="flex justify-center"
               whileInView={{
                 scale: [1, 0.8, 0.8, 1, 1],
-                rotate: [0, 0, 20, 20, 0],
+                rotate: [0, 0, 10, 10, 0],
                 borderRadius: ["0%", "0%", "50%", "50%", "0%"],
               }}
               transition={{
-                duration: 2,
+                duration: 4,
                 ease: "easeInOut",
                 times: [0, 0.2, 0.5, 0.8, 1],
                 repeat: Infinity,
@@ -187,10 +186,12 @@ const Home = () => {
             >
               Skills
             </motion.h1>
-            <motion.h4 className="text-gray-200 pt-1 text-2xl dancing-script"
+            <motion.h4
+              className="text-gray-200 pt-1 text-2xl dancing-script"
               initial={{ opacity: 0, scale: 0.8, x: -150 }}
               whileInView={{ opacity: 1, scale: 1, x: 0 }}
-              transition={{ type: "spring", stiffness: 200, damping: 5 }}>
+              transition={{ type: "spring", stiffness: 200, damping: 5 }}
+            >
               About what skills I know
             </motion.h4>
           </div>
@@ -199,17 +200,79 @@ const Home = () => {
           </div>
           <p className="pt-7 text-white">Click to show my skills</p>
           <div className="pt-2 flex gap-5">
-            <p className="cursor-pointer hover:text-white hover:bg-black  pl-4 pr-4 pt-2 pb-2 border-2 rounded-3xl" onClick={()=>setSkill(1)}>FrontEnd</p>
-            <p className="cursor-pointer hover:text-white hover:bg-black  pl-4 pr-4 pt-2 pb-2 border-2 rounded-3xl" onClick={()=>setSkill(2)}>BackEnd</p>
-            <p className="cursor-pointer hover:text-white hover:bg-black  pl-4 pr-4 pt-2 pb-2 border-2 rounded-3xl" onClick={()=>setSkill(3)}>Tools etc..</p>
+            <a
+              href=""
+              className="cursor-pointer hover:text-white hover:bg-black  pl-4 pr-4 pt-2 pb-2 border-2 rounded-3xl active:text-white"
+              onClick={(e) => {setSkill(1);e.preventDefault()}}
+            >
+              FrontEnd
+            </a>
+            <a
+              href=""
+              className="cursor-pointer hover:text-white hover:bg-black  pl-4 pr-4 pt-2 pb-2 border-2 rounded-3xl"
+              onClick={(e) => {setSkill(2);e.preventDefault()}}
+            >
+              BackEnd
+            </a>
+            <a
+              href=""
+              className="cursor-pointer hover:text-white hover:bg-black  pl-4 pr-4 pt-2 pb-2 border-2 rounded-3xl"
+              onClick={(e) => {setSkill(3);e.preventDefault()}}
+            >
+              Tools etc..
+            </a>
           </div>
-              
+
           {handleSkill()}
-          
-          
         </div>
         <div className="text-white">
           <Marquee text={["FrontEnd", "BackEnd", "FrameWorks", "Libraries"]} />
+        </div>
+      </div>
+      <div className="projects">
+        <div className=" pt-20 pl-10 pr-10 md:pl-20 md:pr-20">
+          <motion.div
+            className=""
+            initial={{ opacity: 0, scale: 0.8, x: -150 }}
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            transition={{ type: "spring", stiffness: 200, damping: 5 }}
+          >
+            <h1 className="text-5xl font-bold ">Projects</h1>
+            <h4 className="text-2xl pt-2 dancing-script text-zinc-400">
+              About What I have developed
+            </h4>
+          </motion.div>
+        </div>
+        <div className="pt-5">
+          <p className="pb-5 text-center">For More Info , Click Below</p>
+          <div className="flex justify-center">
+          <Link to='/projects'>
+            <p className="pl-5 pr-5 pt-2 pb-2 border-4 border-zinc-100 bg-zinc-200 rounded-2xl hover:scale-125 scale-100 duration-500 hover:rotate-3 hover:text-white hover:bg-zinc-400 hover:border-zinc-500">Projects</p>
+          </Link>
+          </div>
+          </div>
+        <div className="">
+          <p className="text-center text-zinc-400 pt-5">Drag Horizontally to View !!!</p>
+        </div>
+        <div className="pt-10">
+          <Slideshow />
+        </div>
+      </div>
+      <div className="contact">
+        <div className="">
+          <div className="h-[100vh] pt-20 pl-10 pr-10 md:pl-20 md:pr-20">
+            <motion.div
+              className=""
+              initial={{ opacity: 0, scale: 0.8, x: -150 }}
+              whileInView={{ opacity: 1, scale: 1, x: 0 }}
+              transition={{ type: "spring", stiffness: 200, damping: 5 }}
+            >
+              <h1 className="text-5xl font-bold ">Contact</h1>
+              <h4 className="text-2xl pt-2 dancing-script text-zinc-400">
+                Let's Connect and Communicate
+              </h4>
+            </motion.div>
+          </div>
         </div>
       </div>
       <FIxedButton />

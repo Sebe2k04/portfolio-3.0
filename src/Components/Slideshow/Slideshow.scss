@@ -1,0 +1,11 @@
+.description::-webkit-scrollbar {
+  width: 3px;
+}
+.card{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+.card:nth-child(2n){
+  display: flex;
+  flex-direction: column-reverse;
+}

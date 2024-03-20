@@ -19,6 +19,7 @@ const AnimatedText = ({ text }) => {
         initial="hidden"
         whileInView="visible"
         transition={{staggerChildren:0.01}}
+        viewport={{once:true}}
         aria-hidden
       >
         {text.split("").map((char) => (
