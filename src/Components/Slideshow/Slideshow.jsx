@@ -21,8 +21,8 @@ const Slideshow = () => {
         <div className="h-[180px] w-[260px] mt-[20px] m-auto rounded-2xl bg-white">
           <img src={img} alt="" className="rounded-2xl w-full h-full grayscale " />
         </div>
-        <div className="pl-[40px] pt-[20px] pr-[20px]">
-            <h1>{name}</h1>
+        <div className="pl-[40px] pt-[20px] pr-[20px] ">
+            <h1 className="font-bold">{name}</h1>
             <p className="description overflow-y-scroll h-[120px] text-justify pr-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur libero maiores quidem placeat, harum tempore obcaecati velit fuga suscipit neque adipisci voluptatem totam. Expedita, asperiores veritatis in porro vitae explicabo!</p>
         </div>
       </div>
