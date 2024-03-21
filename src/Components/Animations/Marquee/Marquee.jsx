@@ -23,7 +23,7 @@ const Marquee = ({ text }) => {
     <div id="scroller">
       <div className="scroll">
         {text.map((item) => (
-          <h4>
+          <h4 key={item}>
             {item}
             {dot()}
           </h4>
