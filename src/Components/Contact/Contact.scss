@@ -8,3 +8,13 @@
   );
 }
 
+.input{
+  border: 2px solid rgb(232, 232, 232);
+  border-radius: 10px;
+  padding: 4px;
+  margin: 4px;
+  &::placeholder{
+    color: rgb(195, 195, 195);
+    padding-left: 10px;
+  }
+}

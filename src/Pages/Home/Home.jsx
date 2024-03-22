@@ -301,7 +301,7 @@ const Home = () => {
         </div>
         {/* <Marquee text={["Eat","Code","Sleep","Repeat"]}/> */}
       </div>
-      {/* <Contact /> */}
+      <Contact />
       <FIxedButton />
     </div>
   );

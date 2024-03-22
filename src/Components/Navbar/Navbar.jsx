@@ -1,6 +1,7 @@
 import "./Navbar.scss";
 import sebe from "../../assets/Images/favicon.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Drawer from "@mui/material/Drawer";
 import { motion } from "framer-motion";
 import logo from '../../assets/Images/favicon.png'
@@ -19,10 +20,10 @@ const Navbar = () => {
             <img src={sebe} className="w-[60px] grayscale" alt="" />
           </div>
           <div className="links h-fit pt-8 gap-5 md:gap-8 tracking-wide hidden md:flex">
-            <a href="#">Home</a>
+            <Link to="/">Home</Link>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
-            <a href="">Projects</a>
+            <a href="#projects">Projects</a>
           </div>
           <div className="links pt-8 pr-10 h-fit hidden md:flex">
             <a href="" className="links">
@@ -74,7 +75,7 @@ const Navbar = () => {
               />
             </svg>
             <li>
-              <a href="#" onClick={toggleDrawer(false)} >Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <a href="#about" onClick={toggleDrawer(false)}>About</a>
@@ -83,7 +84,7 @@ const Navbar = () => {
               <a href="#skills" onClick={toggleDrawer(false)}>Skills</a>
             </li>
             <li>
-              <a href="" onClick={toggleDrawer(false)}>Projects</a>
+              <a href="#projects" onClick={toggleDrawer(false)}>Projects</a>
             </li>
             <li>
               <a href="" onClick={toggleDrawer(false)}>Contact</a>
