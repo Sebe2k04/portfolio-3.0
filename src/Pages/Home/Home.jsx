@@ -66,12 +66,11 @@ const Home = () => {
             transition={{ type: "spring", stiffness: 200, damping: 5 }}
           >
             <a
-              href=""
+              href="https://drive.google.com/file/d/1Zz1QW3IGWGUf6zFCKyiX-VbCsPQZNso0/view?usp=drive_link"
               className="flex gap-3 pl-5 pr-5 pt-3 pb-3 btnlink "
-              onClick={(e) => e.preventDefault()}
             >
               <p className="pt-2 dancing-script text-xl md:text-2xl md:pt-1">
-                Download CV
+                Resume
               </p>
               <svg
                 className=""
