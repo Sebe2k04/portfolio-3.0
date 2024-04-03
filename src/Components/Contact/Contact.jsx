@@ -7,14 +7,14 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Contact = () => {
   return (
-    <div className="contact ">
+    <div className="contact" >
       <div className="pb-20">
         <div className="pl-10 pt-10">
           <motion.h1
             className="text-5xl font-bold"
             initial={{ opacity: 0, scale: 0.8, x: -150 }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
-            transition={{ type: "spring", stiffness: 200, damping: 5 }}
+            transition={{ type: "spring", stiffness: 200, damping: 50 }}
           >
             Contact
           </motion.h1>
@@ -22,7 +22,7 @@ const Contact = () => {
             className="text-gray-400 pt-1 text-2xl dancing-script"
             initial={{ opacity: 0, scale: 0.8, x: -150 }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
-            transition={{ type: "spring", stiffness: 200, damping: 5 }}
+            transition={{ type: "spring", stiffness: 200, damping: 50 }}
           >
             Let&apos;s Connect and Communicate
           </motion.h4>

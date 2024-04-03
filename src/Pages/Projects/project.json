@@ -1,0 +1,34 @@
+[
+    {
+        "id":0,
+        "title":"GenRio",
+        "description":"A portfolio website to showcase an startup organization activities and conatins all the deatils about the webiste and provide services through online",
+        "type":"portfolio website",
+        "at":"March 2024",
+        "link":"https://genrio.onrender.com/",
+        "tech":"HTML,CSS,Javascript,React JS,Tailwindcss,SASS,Material UI,Framer Motion",
+        "url":[
+            "https://res.cloudinary.com/ded1o1e26/image/upload/v1712149432/projects/genrio/genrio1_gckowx.png",
+            "https://res.cloudinary.com/ded1o1e26/image/upload/v1712149430/projects/genrio/genrio4_rodytg.png",
+            "https://res.cloudinary.com/ded1o1e26/image/upload/v1712149432/projects/genrio/genrio2_niotuf.png",
+            "https://res.cloudinary.com/ded1o1e26/image/upload/v1712149449/projects/genrio/genrio5_wzns6k.png",
+            "https://res.cloudinary.com/ded1o1e26/image/upload/v1712149430/projects/genrio/genrio3_snhaur.png"
+        ]
+    },
+    {
+        "id":1,
+        "title":"TrendZee",
+        "description":"Trendzee is a simple ecommerce for fashion products to explore fashion through internet",
+        "type":"Ecommerce website",
+        "at":"March 2024",
+        "link":"https://trendzee.onrender.com/",
+        "tech":"HTML,CSS,Javascript,React JS,Tailwindcss,SASS,Material UI,Framer Motion,Node JS,Express JS,Cloudinary,CRUD Operations,Api,MonogDB Atlas",
+        "url":[
+            "https://res.cloudinary.com/ded1o1e26/image/upload/v1712149453/projects/trendzee/trendzee1_act56w.png",
+            "https://res.cloudinary.com/ded1o1e26/image/upload/v1712149452/projects/trendzee/trendzee4_b4p8yr.png",
+            "https://res.cloudinary.com/ded1o1e26/image/upload/v1712149455/projects/trendzee/trendzee2_bahxt3.png",
+            "https://res.cloudinary.com/ded1o1e26/image/upload/v1712149452/projects/trendzee/trendzee5_g4dpba.png",
+            "https://res.cloudinary.com/ded1o1e26/image/upload/v1712149475/projects/trendzee/trendzee3_xtzkfv.png"
+        ]
+    }
+]

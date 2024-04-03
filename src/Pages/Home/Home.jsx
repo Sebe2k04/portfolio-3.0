@@ -66,7 +66,7 @@ const Home = () => {
             transition={{ type: "spring", stiffness: 200, damping: 5 }}
           >
             <a
-              href="https://drive.google.com/file/d/1Zz1QW3IGWGUf6zFCKyiX-VbCsPQZNso0/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1cUPq24Nal2E7l5kjB99tWQIJuiYw54-t/view?usp=drive_link"
               className="flex gap-3 pl-5 pr-5 pt-3 pb-3 btnlink "
             >
               <p className="pt-2 dancing-script text-xl md:text-2xl md:pt-1">
@@ -145,7 +145,7 @@ const Home = () => {
                 ease: "easeInOut",
                 times: [0, 0.2, 0.5, 0.8, 1],
                 repeat: Infinity,
-                repeatDelay: 1,
+                repeatDelay: 2,
               }}
             >
               <img
@@ -184,7 +184,7 @@ const Home = () => {
               className="text-5xl font-bold"
               initial={{ opacity: 0, scale: 0.8, x: -150 }}
               whileInView={{ opacity: 1, scale: 1, x: 0 }}
-              transition={{ type: "spring", stiffness: 200, damping: 5 }}
+              transition={{ type: "spring", stiffness: 200, damping: 50 }}
             >
               Skills
             </motion.h1>
@@ -192,7 +192,7 @@ const Home = () => {
               className="text-gray-200 pt-1 text-2xl dancing-script"
               initial={{ opacity: 0, scale: 0.8, x: -150 }}
               whileInView={{ opacity: 1, scale: 1, x: 0 }}
-              transition={{ type: "spring", stiffness: 200, damping: 5 }}
+              transition={{ type: "spring", stiffness: 200, damping: 50 }}
             >
               About what skills I know
             </motion.h4>
@@ -240,13 +240,13 @@ const Home = () => {
           <Marquee text={["FrontEnd", "BackEnd", "FrameWorks", "Libraries"]} />
         </div>
       </div>
-      <div className="projects">
+      <div id="projects" className="projects">
         <div className=" pt-20 pl-10 pr-10 md:pl-20 md:pr-20">
           <motion.div
             className=""
             initial={{ opacity: 0, scale: 0.8, x: -150 }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
-            transition={{ type: "spring", stiffness: 200, damping: 5 }}
+            transition={{ type: "spring", stiffness: 200, damping: 50 }}
           >
             <h1 className="text-5xl font-bold ">Projects</h1>
             <h4 className="text-2xl pt-2 dancing-script text-zinc-400">
@@ -282,7 +282,7 @@ const Home = () => {
             className="text-5xl font-bold"
             initial={{ opacity: 0, scale: 0.8, x: -150 }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
-            transition={{ type: "spring", stiffness: 200, damping: 5 }}
+            transition={{ type: "spring", stiffness: 200, damping: 50 }}
           >
             TimeLine
           </motion.h1>
@@ -290,7 +290,7 @@ const Home = () => {
             className="text-gray-400 pt-1 text-2xl dancing-script"
             initial={{ opacity: 0, scale: 0.8, x: -150 }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
-            transition={{ type: "spring", stiffness: 200, damping: 5 }}
+            transition={{ type: "spring", stiffness: 200, damping: 50 }}
           >
             About what I do
           </motion.h4>
@@ -300,7 +300,9 @@ const Home = () => {
         </div>
         {/* <Marquee text={["Eat","Code","Sleep","Repeat"]}/> */}
       </div>
+      <div className="" id="contact">
       <Contact />
+      </div>
       <FIxedButton />
     </div>
   );

@@ -21,9 +21,9 @@ const Navbar = () => {
           </div>
           <div className="links h-fit pt-8 gap-5 md:gap-8 tracking-wide hidden md:flex">
             <Link to="/">Home</Link>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
+            <a href="/#about">About</a>
+            <a href="/#skills">Skills</a>
+            <Link to={"/projects"}>Projects</Link>
           </div>
           <div className="links pt-8 pr-10 h-fit hidden md:flex">
             <a href="" className="links">
@@ -75,19 +75,19 @@ const Navbar = () => {
               />
             </svg>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={toggleDrawer(false)}>Home</Link>
             </li>
             <li>
-              <a href="#about" onClick={toggleDrawer(false)}>About</a>
+              <a href="/#about" onClick={toggleDrawer(false)}>About</a>
             </li>
             <li>
-              <a href="#skills" onClick={toggleDrawer(false)}>Skills</a>
+              <a href="/#skills" onClick={toggleDrawer(false)}>Skills</a>
             </li>
             <li>
-              <a href="#projects" onClick={toggleDrawer(false)}>Projects</a>
+              <Link to={"/projects"} onClick={toggleDrawer(false)}>Projects</Link>
             </li>
             <li>
-              <a href="" onClick={toggleDrawer(false)}>Contact</a>
+              <a href="/#contact" onClick={toggleDrawer(false)}>Contact</a>
             </li>
           </motion.div>
           <div className="flex justify-center pb-20 opacity-55">
