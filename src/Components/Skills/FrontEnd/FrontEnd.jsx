@@ -8,7 +8,7 @@ const FrontEnd = () => {
           <p>CSS</p>
           <p>SCSS</p>
           <p>JavaScript</p>
-          <p>TypeScript</p>
+          {/* <p>TypeScript</p> */}
           <p>React JS</p>
           <p>TailWind CSS</p>
           <p>Material UI</p>

@@ -204,7 +204,7 @@ const Home = () => {
           <div className="pt-2 flex gap-5">
             <a
               href=""
-              className="cursor-pointer hover:text-white hover:bg-black  pl-4 pr-4 pt-2 pb-2 border-2 rounded-3xl active:text-white"
+              className={ skill === 1 ? "skillsbtn bg-black text-white" : "skillsbtn"}
               onClick={(e) => {
                 setSkill(1);
                 e.preventDefault();
@@ -214,7 +214,7 @@ const Home = () => {
             </a>
             <a
               href=""
-              className="cursor-pointer hover:text-white hover:bg-black  pl-4 pr-4 pt-2 pb-2 border-2 rounded-3xl"
+              className={ skill === 2 ? "skillsbtn bg-black text-white" : "skillsbtn"}
               onClick={(e) => {
                 setSkill(2);
                 e.preventDefault();
@@ -224,7 +224,7 @@ const Home = () => {
             </a>
             <a
               href=""
-              className="cursor-pointer hover:text-white hover:bg-black  pl-4 pr-4 pt-2 pb-2 border-2 rounded-3xl"
+              className={ skill === 3 ? "skillsbtn bg-black text-white" : "skillsbtn"}
               onClick={(e) => {
                 setSkill(3);
                 e.preventDefault();

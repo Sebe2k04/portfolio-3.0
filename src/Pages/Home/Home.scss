@@ -27,12 +27,12 @@
 
 .about {
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    40deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  // background: linear-gradient(
+  //   40deg,
+  //   rgba(255, 255, 255, 1) 0%,
+  //   rgba(255, 255, 255, 1) 50%,
+  //   rgba(0, 0, 0, 1) 100%
+  // );
   text-align: justify;
 }
 
@@ -45,11 +45,12 @@
 
 .projects{
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    200deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 40%,
-    rgb(103, 103, 103) 100%
-  );
+  // background: linear-gradient(
+  //   200deg,
+  //   rgba(255, 255, 255, 1) 0%,
+  //   rgba(255, 255, 255, 1) 40%,
+  //   rgb(103, 103, 103) 100%
+  // );
+  border-bottom: 1px solid gray;
 }
 
